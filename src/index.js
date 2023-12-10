@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import store from 'src/store';
 import App from 'src/components/App';
-
+import i18n from '../i18n';
 
 const rootReactElement = (
   <Provider store={store}>

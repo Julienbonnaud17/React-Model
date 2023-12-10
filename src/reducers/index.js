@@ -1,13 +1,13 @@
-const initialState = {
-  hello: 'Hello',
-};
+import { combineReducers } from 'redux';
 
-const reducer = (state = initialState, action = {}) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import testReducer from './test';
 
-export default reducer;
+// We pass to the combineReducers an object which has the shape of the desired state
+// here, we'll have compartment (property) trucks and user in the state
+// we associate to each compartment the reducer that handles this part of the state
+const rootReducer = combineReducers({
+  test: testReducer,
 
+});
+
+export default rootReducer;

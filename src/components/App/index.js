@@ -1,16 +1,12 @@
 // == Import
+import Test from '../Test';
 import './styles.scss';
-import Header from '../Header';
-import Footer from '../Footer';
-import Main from '../Main';
 
 // == Composant
 const App = () => {
   return (
     <div className="app">
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Test></Test>
     </div>
   );
 };
